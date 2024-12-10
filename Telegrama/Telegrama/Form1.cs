@@ -6,6 +6,7 @@ namespace Telegrama
         {
             InitializeComponent();
         }
+        //Matenme
 
         private void btnCalcularPrecio_Click(object sender, EventArgs e)
         {
