@@ -1,4 +1,4 @@
-namespace ejercicioTelegrama
+namespace Telegrama
 {
     internal static class Program
     {
