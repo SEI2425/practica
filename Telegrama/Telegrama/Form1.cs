@@ -21,7 +21,7 @@ namespace Telegrama
 
             // Determino el tipo de telegrama
             // Si el checkbox de urgente está marcado, se asigna 'u' a tipoTelegrama
-            if (chkUrgente.Checked)
+            if (radUrg.Checked)
             {
                 tipoTelegrama = 'u';
             }
@@ -76,6 +76,11 @@ namespace Telegrama
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }
