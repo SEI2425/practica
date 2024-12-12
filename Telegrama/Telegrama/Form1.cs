@@ -7,7 +7,7 @@ namespace Telegrama
             InitializeComponent();
         }
         //Matenme
-        //pORFA
+        //pORFAsi
 
         private void btnCalcularPrecio_Click(object sender, EventArgs e)
         {
