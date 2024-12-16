@@ -40,12 +40,12 @@ namespace Telegrama
             {
                 if (numPalabras <= 10)
                 {
-                    coste = 2.5;
+                    coste = 3;
                 }
                 else
                 {
                     // Se suma 2.5 por las primeras 10 palabras, y 0.5 por cada palabra adicional
-                    coste = 2.5 + 0.5 * (numPalabras - 10);
+                    coste = 3 + 0.5 * (numPalabras - 10);
                 }
             }
             else if (tipoTelegrama == 'u')
@@ -53,12 +53,12 @@ namespace Telegrama
                 // Telegrama urgente
                 if (numPalabras > 10)
                 {
-                    coste = 5 + 0.75 * (numPalabras - 10);
+                    coste = 6 + 0.75 * (numPalabras - 10);
                 }
                 else
                 {
                     // Se suma 5 por las primeras 10 palabras, y 0.75 por cada palabra adicional
-                    coste = 5;
+                    coste = 6;
                 }
             }
             else
