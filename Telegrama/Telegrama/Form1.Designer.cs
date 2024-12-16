@@ -31,9 +31,10 @@
             button1 = new Button();
             label2 = new Label();
             text = new Label();
-            chkUrgente = new CheckBox();
             txtPrecio = new TextBox();
             txt = new TextBox();
+            radOrd = new RadioButton();
+            radUrg = new RadioButton();
             SuspendLayout();
             // 
             // button1
@@ -67,18 +68,6 @@
             text.TabIndex = 9;
             text.Text = "Texto";
             // 
-            // chkUrgente
-            // 
-            chkUrgente.AutoSize = true;
-            chkUrgente.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            chkUrgente.Location = new Point(91, 305);
-            chkUrgente.Name = "chkUrgente";
-            chkUrgente.Size = new Size(73, 19);
-            chkUrgente.TabIndex = 8;
-            chkUrgente.Text = "Urgente?";
-            chkUrgente.UseVisualStyleBackColor = true;
-            chkUrgente.CheckedChanged += chkUrgente_CheckedChanged;
-            // 
             // txtPrecio
             // 
             txtPrecio.Location = new Point(157, 365);
@@ -95,15 +84,39 @@
             txt.TabIndex = 6;
             txt.TextChanged += textBox1_TextChanged;
             // 
+            // radOrd
+            // 
+            radOrd.AutoSize = true;
+            radOrd.Location = new Point(91, 300);
+            radOrd.Name = "radOrd";
+            radOrd.Size = new Size(75, 19);
+            radOrd.TabIndex = 12;
+            radOrd.TabStop = true;
+            radOrd.Text = "Ordinario";
+            radOrd.UseVisualStyleBackColor = true;
+            radOrd.CheckedChanged += radioButton1_CheckedChanged;
+            // 
+            // radUrg
+            // 
+            radUrg.AutoSize = true;
+            radUrg.Location = new Point(191, 300);
+            radUrg.Name = "radUrg";
+            radUrg.Size = new Size(67, 19);
+            radUrg.TabIndex = 13;
+            radUrg.TabStop = true;
+            radUrg.Text = "Urgente";
+            radUrg.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(radUrg);
+            Controls.Add(radOrd);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(text);
-            Controls.Add(chkUrgente);
             Controls.Add(txtPrecio);
             Controls.Add(txt);
             Name = "Form1";
@@ -118,7 +131,6 @@
         private Button button1;
         private Label label2;
         private Label text;
-        private CheckBox chkUrgente;
         private TextBox txtPrecio;
         private TextBox txt;
 
@@ -126,6 +138,9 @@
         {
 
         }
+
+        private RadioButton radOrd;
+        private RadioButton radUrg;
     }
 
     
