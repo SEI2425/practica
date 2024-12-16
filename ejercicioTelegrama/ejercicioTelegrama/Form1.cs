@@ -4,7 +4,7 @@ namespace ejercicioTelegrama
     {
         public Form1()
         {
-            InitializeComponent();
+            //hola
         }
     }
 }
